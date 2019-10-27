@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Movie App - Koin, Retrofit and MVVM</string>
+    <string name="internet_failure_error">Internet Failure</string>
 </resources>
