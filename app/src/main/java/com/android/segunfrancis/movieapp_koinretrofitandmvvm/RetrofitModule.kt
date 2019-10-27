@@ -56,7 +56,7 @@ private fun okHttp(cache: Cache) = OkHttpClient.Builder()
 
 @UseExperimental(UnstableDefault::class)
 private fun retrofit(callFactory: Call.Factory, baseUrl: String) = Retrofit.Builder()
-    .callFactory(OkHttpClient.Builder().build())
+    .callFactory(callFactory)
     .baseUrl(baseUrl)
     .addConverterFactory(Json(JsonConfiguration(strictMode = false))
         .asConverterFactory("application/json".toMediaType()))
